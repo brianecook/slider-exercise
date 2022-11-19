@@ -32,7 +32,7 @@ function Slider({ slides }) {
       if (activeSlide === slideCount - 1) snapToSlide(1);
     }
 
-  }, [activeSlide]);
+  }, [activeSlide, slideCount, slides]);
 
   return (
     <S.Wrapper>

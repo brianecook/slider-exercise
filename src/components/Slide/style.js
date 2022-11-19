@@ -10,8 +10,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Buttons = styled.div`
-  display: inline-flex;
+  max-width: 450px;
+  margin: 40px auto 0;
+  display: flex;
   gap: 15px;
+  > a {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
 `;
 
 export const Button = styled.a`
@@ -19,6 +25,7 @@ export const Button = styled.a`
   border: 2px solid #fff;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: 600;
   padding: 12px 18px;
 `;
 
